@@ -83,7 +83,7 @@ const FormikUserForm = withFormik({
     },
 
     validationSchema: Yup.object().shape({
-        userName: Yup.string().required(),
+        userName: Yup.string().required("Don't you want your own speial name? ENTER ONE!"),
         password: Yup.string().required('HEY, you really need a password')
     }),
 
