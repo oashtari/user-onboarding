@@ -50,7 +50,7 @@ const UserForm = ({ values, errors, touched, status }) => {
                 <Field
                     type='checkbox'
                     name="termsOfService"
-                // checked={}
+                    checked={values.termsOfService}
                 />
                 <button type='submit'>Submit your info, it's MINE now!</button>
 
@@ -78,7 +78,7 @@ const FormikUserForm = withFormik({
             userName: props.userName || '',
             email: props.email || '',
             password: props.password || '',
-            termsOfService: props.termsOfService || ''
+            termsOfService: props.termsOfService || false
         };
     },
 
